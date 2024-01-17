@@ -1,1 +1,2 @@
-let monPrenom = "Hello World"
+let monTxt = "Hello World !"
+document.querySelector("div").innerHTML = monTxt;
