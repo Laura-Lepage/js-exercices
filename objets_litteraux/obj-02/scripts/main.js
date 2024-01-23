@@ -1,5 +1,6 @@
-let utilisateurs = {
-    user1: {
+let utilisateurs = [
+    {
+        id: "user1",
         nom: "Martin",
         age: 28,
         profession: "Ingénieur Logiciel",
@@ -10,7 +11,8 @@ let utilisateurs = {
             codePostal: "69000"
         }
     },
-    user2: {
+    {
+        id: "user2",
         nom: "Durand",
         age: 35,
         profession: "Designer Graphique",
@@ -21,7 +23,8 @@ let utilisateurs = {
             codePostal: "13000"
         }
     },
-    user3: {
+    {
+        id: "user3",
         nom: "Lefebvre",
         age: 40,
         profession: "Analyste de Données",
@@ -32,6 +35,14 @@ let utilisateurs = {
             codePostal: "44000"
         }
     }
-};
+];
 
-for (let i=0, i<)
+for (let i=0; i<utilisateurs.length; i++){
+    document.querySelector("div").innerHTML += 
+    `
+    <p>${utilisateurs[i].nom}</p>
+    <p>${utilisateurs[i].age}</p>
+    <p>${utilisateurs[i].profession}</p>
+    <p>${utilisateurs[i].adresse.rue} ${utilisateurs[i].adresse.ville} ${utilisateurs[i].adresse.codePostal}</p>
+    `
+}

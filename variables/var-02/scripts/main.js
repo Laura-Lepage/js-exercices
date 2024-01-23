@@ -1,18 +1,13 @@
 let number = 10
-document.querySelector("p").innerHTML = number
+let monP = document.querySelector("p")
 
+monP.innerHTML = number
 
 let myButtonPlus = document.querySelector("#add")
 myButtonPlus.addEventListener('click', function(){
-    document.querySelector("p").innerHTML = number + 1;
-    
-    
-    
-
+    monP.innerHTML = number++;
 })
 let myButtonMinus = document.querySelector("#remove")
 myButtonMinus.addEventListener('click', function(){
-    document.querySelector("p").innerHTML = number - 1;
-    
-
+    monP.innerHTML = number--;
 })

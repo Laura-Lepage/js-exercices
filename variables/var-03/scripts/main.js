@@ -1,7 +1,8 @@
-let premier = "Hello "
-let deuxième = "les "
-let troisième = "guys !"
+let premier = "Hello ",
+    deuxieme = "les ",
+    troisieme = "guys !"
 
-let phrase = premier + deuxième + troisième
+let phrase = premier + deuxieme + troisieme
+let phrase1 = ${premier}${deuxieme}${troisieme}
 
-document.querySelector("p").innerHTML = phrase
+document.querySelector("p").innerHTML = phrase1

@@ -4,4 +4,4 @@ let utilisateur = {
     age: 35
 }
 
-document.body.innerHTML = `<h1 title="${utilisateur.age}">${utilisateur.nom} ${utilisateur.prenom}</h1>`
+document.body.innerHTML = `<h1>${utilisateur.nom} ${utilisateur.prenom} <sub>${utilisateur.age}</sub></h1>`
